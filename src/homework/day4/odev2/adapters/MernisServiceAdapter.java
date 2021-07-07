@@ -1,11 +1,10 @@
 package homework.day4.odev2.adapters;
 
 import homework.day4.odev2.abstracts.ICustomerCheckService;
-import homework.day4.odev2.core.mernis.RABKPSPublicSoap;
+import core.mernis.RABKPSPublicSoap;
 import homework.day4.odev2.entities.Customer;
 
 import java.text.SimpleDateFormat;
-import java.util.Date;
 
 public class MernisServiceAdapter implements ICustomerCheckService {
 

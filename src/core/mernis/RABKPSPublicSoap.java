@@ -1,4 +1,4 @@
-package homework.day4.odev2.core.mernis;
+package core.mernis;
 
 //----------------------------------------------------
 //
@@ -18,7 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class RABKPSPublicSoap12
+public class RABKPSPublicSoap
 {
     interface RABIWcfMethod
     {
@@ -35,14 +35,14 @@ public class RABKPSPublicSoap12
     public boolean enableLogging;
 
 
-    public RABKPSPublicSoap12(){}
+    public RABKPSPublicSoap(){}
 
-    public RABKPSPublicSoap12(String url)
+    public RABKPSPublicSoap(String url)
     {
         this.url = url;
     }
 
-    public RABKPSPublicSoap12(String url,int timeOut)
+    public RABKPSPublicSoap(String url,int timeOut)
     {
         this.url = url;
         this.timeOut=timeOut;
@@ -77,7 +77,7 @@ public class RABKPSPublicSoap12
 
     protected RABExtendedSoapSerializationEnvelope createEnvelope()
     {
-        RABExtendedSoapSerializationEnvelope envelope= new RABExtendedSoapSerializationEnvelope(RABExtendedSoapSerializationEnvelope.VER12);
+        RABExtendedSoapSerializationEnvelope envelope= new RABExtendedSoapSerializationEnvelope(RABExtendedSoapSerializationEnvelope.VER11);
         envelope.enableLogging = enableLogging;
     
         return envelope;

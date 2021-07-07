@@ -1,4 +1,4 @@
-package homework.day4.odev2.core.mernis;
+package core.mernis;
 
 public class Test {
 
